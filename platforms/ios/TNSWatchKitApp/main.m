@@ -12,6 +12,7 @@
 #include "TNSDebugging.h"
 #endif
 
+
 TNSRuntime *runtime = nil;
 
 int main(int argc, char *argv[]) {
