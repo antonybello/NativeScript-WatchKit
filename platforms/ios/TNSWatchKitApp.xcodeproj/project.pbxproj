@@ -19,7 +19,7 @@
 		38A7DCC61B56F8A500C77619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A7DCC51B56F8A500C77619 /* main.m */; };
 		38A7DCCA1B56FDBD00C77619 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCC91B56FDBD00C77619 /* app */; };
 		38A7DCCB1B56FDBD00C77619 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCC91B56FDBD00C77619 /* app */; };
-		858B83F318CA22B800AB12DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 858B833D18CA111C00AB12DE /* main.m */; };
+		38A7DCCE1B571C7000C77619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 858B833D18CA111C00AB12DE /* main.m */; };
 		858B842918CA22B800AB12DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858B833118CA111C00AB12DE /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		858B842A18CA22B800AB12DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858B833518CA111C00AB12DE /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
@@ -529,7 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858B83F318CA22B800AB12DE /* main.m in Sources */,
+				38A7DCCE1B571C7000C77619 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
