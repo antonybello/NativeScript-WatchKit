@@ -15,7 +15,7 @@
                                 <action selector="tapIncrement" destination="AgC-eL-Hgc" id="hfW-yA-pqd"/>
                             </connections>
                         </button>
-                        <label alignment="center" verticalAlignment="center" text="Taps: 42" id="qra-Mu-ylm"/>
+                        <label alignment="center" verticalAlignment="center" text="Taps: 0" id="qra-Mu-ylm"/>
                     </items>
                     <connections>
                         <outlet property="tapsLabel" destination="qra-Mu-ylm" id="C4D-Bh-yx4"/>
