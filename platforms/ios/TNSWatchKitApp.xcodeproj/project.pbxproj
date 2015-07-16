@@ -818,6 +818,7 @@
 				38A7DCB11B56CC9700C77619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A7DCB31B56CC9700C77619 /* Build configuration list for PBXNativeTarget "TNSWatchKitApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -826,6 +827,7 @@
 				38A7DCAF1B56CC9700C77619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858B832918CA111C00AB12DE /* Build configuration list for PBXProject "TNSWatchKitApp" */ = {
 			isa = XCConfigurationList;
