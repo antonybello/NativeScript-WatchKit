@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		38A7DC9C1B56CC9700C77619 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DC9B1B56CC9700C77619 /* Images.xcassets */; };
-		38A7DCA01B56CC9700C77619 /* TNSWatchKitApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DC9F1B56CC9700C77619 /* TNSWatchKitApp WatchKit App.app */; };
 		38A7DCA81B56CC9700C77619 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCA61B56CC9700C77619 /* Interface.storyboard */; };
 		38A7DCAA1B56CC9700C77619 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCA91B56CC9700C77619 /* Images.xcassets */; };
 		38A7DCAD1B56CC9700C77619 /* TNSWatchKitApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38A7DC8D1B56CC9700C77619 /* TNSWatchKitApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -20,6 +19,7 @@
 		38A7DCCA1B56FDBD00C77619 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCC91B56FDBD00C77619 /* app */; };
 		38A7DCCB1B56FDBD00C77619 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DCC91B56FDBD00C77619 /* app */; };
 		38A7DCCE1B571C7000C77619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 858B833D18CA111C00AB12DE /* main.m */; };
+		38A7DCD31B58111200C77619 /* TNSWatchKitApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 38A7DC9F1B56CC9700C77619 /* TNSWatchKitApp WatchKit App.app */; };
 		858B842918CA22B800AB12DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858B833118CA111C00AB12DE /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		858B842A18CA22B800AB12DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858B833518CA111C00AB12DE /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
@@ -420,9 +420,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A7DCD31B58111200C77619 /* TNSWatchKitApp WatchKit App.app in Resources */,
 				38A7DCCA1B56FDBD00C77619 /* app in Resources */,
 				38A7DC9C1B56CC9700C77619 /* Images.xcassets in Resources */,
-				38A7DCA01B56CC9700C77619 /* TNSWatchKitApp WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,7 +640,7 @@
 				INFOPLIST_FILE = "TNSWatchKitApp WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TNSWatchKitApp WatchKit App";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -661,7 +661,7 @@
 				INFOPLIST_FILE = "TNSWatchKitApp WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TNSWatchKitApp WatchKit App";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
