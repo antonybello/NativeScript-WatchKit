@@ -10,8 +10,7 @@
 
 
 @interface InterfaceController()
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel *tapsLabel;
-
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *timeLabel;
 @end
 
 
