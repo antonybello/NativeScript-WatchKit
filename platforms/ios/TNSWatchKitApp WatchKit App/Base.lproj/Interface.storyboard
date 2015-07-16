@@ -10,20 +10,26 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Stop" id="Y4E-Mc-dYb">
-                            <connections>
-                                <action selector="stopTap" destination="AgC-eL-Hgc" id="FXq-Ql-gtH"/>
-                            </connections>
-                        </button>
+                        <label alignment="center" verticalAlignment="center" id="4f2-hb-bIS">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
+                        </label>
+                        <label alignment="left" id="iOj-LK-oUc"/>
+                        <label alignment="center" verticalAlignment="center" text="Time:" id="Ejo-fl-Q2v">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                        </label>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="TbS-Mf-Cfo">
                             <connections>
                                 <action selector="tapIncrement" destination="AgC-eL-Hgc" id="hfW-yA-pqd"/>
                             </connections>
                         </button>
-                        <label alignment="center" verticalAlignment="center" text="Taps: 0" id="qra-Mu-ylm"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="Y4E-Mc-dYb">
+                            <connections>
+                                <action selector="stopTap" destination="AgC-eL-Hgc" id="FXq-Ql-gtH"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="tapsLabel" destination="qra-Mu-ylm" id="C4D-Bh-yx4"/>
+                        <outlet property="timeLabel" destination="Ejo-fl-Q2v" id="wco-be-k5V"/>
                     </connections>
                 </controller>
             </objects>

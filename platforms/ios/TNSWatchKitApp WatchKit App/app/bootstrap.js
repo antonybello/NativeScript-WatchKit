@@ -1,5 +1,4 @@
 console.log("Hello World!");
-var taps = 0;
 var date;
 var InterfaceController = WKInterfaceController.extend({
   awakeWithContext: function(context) {
@@ -16,19 +15,19 @@ var InterfaceController = WKInterfaceController.extend({
   },
   tapIncrement: function() {
     date = NSDate.alloc().init();
-    console.log(taps);
-    taps++;
-    this._tapsLabel.setText("Taps: " + taps);
+    console.log("Time started");
   },
   stopTap: function() {
-    console.log(date.timeIntervalSinceNow);
+                                                       var time= Math.round(Math.abs(date.timeIntervalSinceNow)*100)/100;
+    console.log(time);
+                                                       this._timeLabel.setText("Time: " + time + " sec");
   },
-  tapsLabel: function() {
-    return this._tapsLabel;
+  timeLabel: function() {
+    return this._timeLabel;
   },
-  "setTapsLabel:": function(value) {
-    this._tapsLabel = value;
-    console.log("Set label: " + value);
+  "setTimeLabel:": function(value) {
+    this._timeLabel = value;
+    console.log("Set time: " + value);
   }
 }, {
   name: "InterfaceController",
@@ -40,12 +39,12 @@ var InterfaceController = WKInterfaceController.extend({
     stopTap: {
       returns: interop.types.void,
       params: []
-    },
-    tapsLabel: {
+    }, 
+    timeLabel: {
       returns: interop.types.id,
       params: []
     },
-    "setTapsLabel:": {
+    "setTimeLabel:": {
       returns: interop.types.void,
       params: [interop.types.id]
     }
