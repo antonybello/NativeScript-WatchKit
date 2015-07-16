@@ -1,5 +1,6 @@
 console.log("Hello World!");
 var date;
+var timeStarted;
 var InterfaceController = WKInterfaceController.extend({
   awakeWithContext: function(context) {
     this.super.awakeWithContext(context);
@@ -13,14 +14,25 @@ var InterfaceController = WKInterfaceController.extend({
     this.super.didDeactivate();
     console.log("InterfaceController: didDeactivate");
   },
-  tapIncrement: function() {
-    date = NSDate.alloc().init();
-    console.log("Time started");
+  startTap: function() {
+    if (!timeStarted) {
+      timeStarted = true;
+      date = NSDate.alloc().init();
+      this._timeLabel.setText("Timer started!");
+    } else {
+                                                       this._timeLabel.adjustsFontSizeToFitWidth = true;
+      this._timeLabel.setText("Timer is already running");
+                                                       
+    }
   },
   stopTap: function() {
-                                                       var time= Math.round(Math.abs(date.timeIntervalSinceNow)*100)/100;
-    console.log(time);
-                                                       this._timeLabel.setText("Time: " + time + " sec");
+    if (timeStarted) {
+      var time = Math.round(Math.abs(date.timeIntervalSinceNow) * 100) / 100;
+      this._timeLabel.setText("Time: " + time + " sec");
+      timeStarted = false;
+    } else {
+      this._timeLabel.setText("Start time to begin.");
+    }
   },
   timeLabel: function() {
     return this._timeLabel;
@@ -32,14 +44,14 @@ var InterfaceController = WKInterfaceController.extend({
 }, {
   name: "InterfaceController",
   exposedMethods: {
-    tapIncrement: {
+    startTap: {
       returns: interop.types.void,
       params: []
     },
     stopTap: {
       returns: interop.types.void,
       params: []
-    }, 
+    },
     timeLabel: {
       returns: interop.types.id,
       params: []

@@ -32,7 +32,8 @@
     [super didDeactivate];
 }
 
-- (IBAction)tapIncrement {
+
+- (IBAction)startTap {
 }
 
 - (IBAction)stopTap {

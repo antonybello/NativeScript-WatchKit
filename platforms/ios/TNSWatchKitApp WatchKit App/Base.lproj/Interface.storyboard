@@ -14,12 +14,12 @@
                             <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
                         </label>
                         <label alignment="left" id="iOj-LK-oUc"/>
-                        <label alignment="center" verticalAlignment="center" text="Time:" id="Ejo-fl-Q2v">
-                            <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                        <label alignment="center" verticalAlignment="center" text="Time:" numberOfLines="3" id="Ejo-fl-Q2v">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
                         </label>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="TbS-Mf-Cfo">
                             <connections>
-                                <action selector="tapIncrement" destination="AgC-eL-Hgc" id="hfW-yA-pqd"/>
+                                <action selector="startTap" destination="AgC-eL-Hgc" id="7tc-Rd-eBr"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="Y4E-Mc-dYb">
