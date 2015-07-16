@@ -36,6 +36,9 @@
 - (IBAction)tapIncrement {
 }
 
+- (IBAction)stopTap {
+}
+
 @end
 
 
