@@ -10,7 +10,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Tap++" id="TbS-Mf-Cfo">
+                        <button width="1" alignment="left" title="Stop" id="Y4E-Mc-dYb">
+                            <connections>
+                                <action selector="stopTap" destination="AgC-eL-Hgc" id="FXq-Ql-gtH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="TbS-Mf-Cfo">
                             <connections>
                                 <action selector="tapIncrement" destination="AgC-eL-Hgc" id="hfW-yA-pqd"/>
                             </connections>
